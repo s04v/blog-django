@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+body {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 7px 15px;
+  cursor: pointer;
+  background-color: rgb(55, 55, 255);
+  color: white;
+  border: 0;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(81, 81, 255);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+
+#header-name {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 10px;
+  font-weight: 600;
+}
+
+#header-name img {
+  width: 40px;
+}
+
+#content {
+  margin: 70px 0;
+  display: flex;
+  height: 100%;
+}
+
+#posts {
+  width: 80%;
+}
+
+#info {
+  text-align: center;
+  width: 23%;
+  border-left: 1px solid grey;
+}
+
+#info h2 { 
+  margin: 10px 0;
+}
+
+#info p {
+  color: grey;
+}
+
+.post {
+  margin-bottom: 50px;
+  width: 80%;
+
+}
+
+.post a {
+  color: black;
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post p {
+  color: grey;
+  margin: 10px 0;
+}
+
+#date {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+#post-page-content {
+  padding: 50px 350px;
+}
+
+#new-post-page-content {
+  padding: 50px 350px;
+}
+
+#post-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+#post-header h1 {
+  margin-right: auto;
+}
+
+#new-post-page-content input{
+  width: 100%;
+  padding: 5px 7px;
+  margin-bottom: 20px;
+}
+
+#new-post-page-content textarea {
+  padding: 5px 7px;
+  width: 100%;
+  height: 400px;
+}
+
+#register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+}
+
+#register-form h2{
+  margin-bottom: 20px;
+}
+
+#register-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+#register-form input{
+  width: 200px;
+  padding: 5px 7px;
+  margin-bottom: 15px;
+}
+
+#register-form a {
+  text-decoration: underline;
+  color: blue;
+  margin-top: 20px;
+}

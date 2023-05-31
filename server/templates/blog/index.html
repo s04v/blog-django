@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>Blog</title>
+</head>
+<body>
+  <div id="header">
+    <div id="header-name">
+      <img src="{% static 'user.png' %}" />
+      <p>Vitaliy Shvets</p>
+    </div>
+    <a href="/">Blog</a>
+    {% if is_logged == True %}
+      <a href="/new-post">Add post</a>
+      <a href="/logout">Logout</a>
+    {% else %}
+      <a href="/login">Login</a>
+    {% endif %}
+  </div>
+
+  <div id="content">
+    <div id="posts">
+      {%  for post in post_list %}
+        <div class="post">
+          <a href="/post/{{ post.id }}">{{ post.title }}</a>
+          <p>{{ post.date }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div id="info">
+      <img src="{% static 'user.png' %}" />
+      <h2>Vitaliy Shvets</h2>
+      <p>Computer Science Student</p>
+    </div>
+  </div>
+</body>
+</html>
